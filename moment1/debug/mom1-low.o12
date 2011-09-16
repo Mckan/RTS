@@ -1,0 +1,77 @@
+mod:mom1_low:O12:mom1-low.o12
+seg:text:64
+seg:abs:0
+seg:bss:135
+C:text	CF0000CE00003435343637B72084EF36
+C:text	7F0000CF0000CE00003435343637B720
+C:text	84EF367F0000CE00007E3FF07EFFF018
+C:text	0B49003B180B800038790000FF00000B
+C:bss	00000000000000000000000000000000
+C:bss	00000000000000000000000000000000
+C:bss	00000000000000000000000000000000
+C:bss	00000000000000000000000000000000
+C:bss	00000000000000000000000000000000
+C:bss	00000000000000000000000000000000
+C:bss	00000000000000000000000000000000
+C:bss	00000000000000000000000000000000
+C:bss	00000000000000
+RG:text:mom1_low:00000004:O:W:_producer:45
+RG:text:mom1_low:00000017:O:W:_consumer:66
+RG:text:mom1_low:00000027:O:W:timer_interrupt:86
+RL:text:mom1_low:00000001:O:W:0000003F:bss:44
+RL:text:mom1_low:00000011:O:W:00000083:bss:59
+RL:text:mom1_low:00000014:O:W:0000007F:bss:65
+RL:text:mom1_low:00000024:O:W:00000085:bss:80
+RL:text:mom1_low:0000003A:O:W:00000080:bss:103
+RL:text:mom1_low:0000003D:O:W:00000083:bss:104
+G:text:mom1_low:00000000:_main
+SY:A:M:mom1_low$C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12
+SY:A:X:mom1_low:44:text:0
+SY:A:X:mom1_low:45:text:3
+SY:A:X:mom1_low:46:text:6
+SY:A:X:mom1_low:47:text:7
+SY:A:X:mom1_low:48:text:8
+SY:A:X:mom1_low:49:text:9
+SY:A:X:mom1_low:50:text:A
+SY:A:X:mom1_low:56:text:B
+SY:A:X:mom1_low:57:text:D
+SY:A:X:mom1_low:58:text:F
+SY:A:X:mom1_low:59:text:10
+SY:A:X:mom1_low:65:text:13
+SY:A:X:mom1_low:66:text:16
+SY:A:X:mom1_low:67:text:19
+SY:A:X:mom1_low:68:text:1A
+SY:A:X:mom1_low:69:text:1B
+SY:A:X:mom1_low:70:text:1C
+SY:A:X:mom1_low:71:text:1D
+SY:A:X:mom1_low:77:text:1E
+SY:A:X:mom1_low:78:text:20
+SY:A:X:mom1_low:79:text:22
+SY:A:X:mom1_low:80:text:23
+SY:A:X:mom1_low:86:text:26
+SY:A:X:mom1_low:87:text:29
+SY:A:X:mom1_low:90:text:2C
+SY:A:X:mom1_low:92:text:2F
+SY:A:X:mom1_low:95:text:34
+SY:A:X:mom1_low:103:text:39
+SY:A:X:mom1_low:104:text:3C
+SY:A:X:mom1_low:105:text:3F
+SY:C:T: typ2 l (4)
+SY:C:T: typ4 c (1)
+SY:C:T: typ6 s (2)
+SY:C:T:mom1_low: typ16-mom1_low A (0)(typ4)
+SY:C:T:mom1_low: typ17-mom1_low A (2)(typ4)
+SY:C:T:mom1_low: typ18-mom1_low A (64)(typ4)
+SY:A:F:mom1_low:text:_main:00000000:41
+SY:C:S:S:mom1_low:RUNNING:(typ4)
+SY:C:S:S:mom1_low:STKSIZE:(typ16-mom1_low)
+SY:C:S:S:mom1_low:RTIF:(typ16-mom1_low)
+SY:C:S:S:mom1_low:current_sp:(typ17-mom1_low)
+SY:C:S:S:mom1_low:Producer_sp:(typ17-mom1_low)
+SY:C:S:S:mom1_low:a_stack_producer:(typ18-mom1_low)
+SY:C:S:S:mom1_low:a_stack_consumer:(typ4)
+SY:C:S:S:mom1_low:consumer_sp:(typ17-mom1_low)
+SY:C:S:S:mom1_low:CRGFLG:(typ16-mom1_low)
+SY:C:S:S:mom1_low:CRGINT:(typ16-mom1_low)
+SY:C:S:S:mom1_low:RTICTL:(typ16-mom1_low)
+e
