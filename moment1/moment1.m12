@@ -46,7 +46,9 @@
 #PROJECT FILES SECTION
 
 FILES= \
-	"..\..\..\..\..\..\Program Files\GMV\EducDist\src\startup\xcc12\_startup.s12" "" "1" 
+	"..\..\..\..\..\..\..\Program Files (x86)\GMV\EducDist\src\startup\xcc12\_startup.s12" "" "1"  \
+	".\mom1-low.s12" "" "1"  \
+	".\mom1.c" "" "1" 
 #-----------------------------------------------
 #PROJECT OPTIONS SECTION
 
@@ -63,7 +65,9 @@ LNFLAGS=-g -i default.lsc
 #OBJECT FILES SECTION
 
 OBJ= \
-	"debug\_startup.o12"
+	"debug\_startup.o12" \
+	"debug\mom1-low.o12" \
+	"debug\mom1.o12"
 #-----------------------------------------------
 #DEFINES/UNDEFINES SECTION
 
@@ -112,7 +116,7 @@ LIBPATH=
 
 # Application
 "debug\moment1_Debug.s19": $(OBJ)
-	LINK -o"debug\moment1_Debug.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files\GMV\EducDist\bin\..\lib\xcc12\libccd.e12"  $(OBJ)
+	LINK -o"debug\moment1_Debug.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libccd.e12"  $(OBJ)
 #-----------------------------------------------
 
 
@@ -120,14 +124,23 @@ LIBPATH=
 clean:
 	RMFI "debug\moment1_Debug.s19"
 	RMFI "debug\_startup.o12"
+	RMFI "debug\mom1-low.o12"
+	RMFI "debug\mom1.o12"
 #-----------------------------------------------
 
 
 # Dependencies and their build rules
 
 "debug\_startup.o12":	\
-	"C:/Program Files/GMV/EducDist/src/startup/xcc12/_startup.s12"
-	ASSM  $(ASFLAGS) $(ASMDEF) -o"debug\_startup.o12" "C:/Program Files/GMV/EducDist/src/startup/xcc12/_startup.s12"
+	"C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
+	ASSM  $(ASFLAGS) $(ASMDEF) -o"debug\_startup.o12" "C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
+"debug\mom1-low.o12":	\
+	"C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12"
+	ASSM  $(ASFLAGS) $(ASMDEF) -o"debug\mom1-low.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12"
+"debug\mom1.o12":	\
+	"C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1.c"
+	COMP  $(CCFLAGS) $(DEF) $(UNDEF)  \
+	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"debug\mom1.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1.c"
 !EICONF	Debug
 
 !IFCONF	Final
@@ -143,7 +156,9 @@ LNFLAGS=-i default.lsc
 #OBJECT FILES SECTION
 
 OBJ= \
-	"final\_startup.o12"
+	"final\_startup.o12" \
+	"final\mom1-low.o12" \
+	"final\mom1.o12"
 #-----------------------------------------------
 #DEFINES/UNDEFINES SECTION
 
@@ -186,7 +201,7 @@ LIBPATH=
 
 # Application
 "final\moment1_Final.s19": $(OBJ)
-	LINK -o"final\moment1_Final.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files\GMV\EducDist\bin\..\lib\xcc12\libcc.e12"  $(OBJ)
+	LINK -o"final\moment1_Final.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libcc.e12"  $(OBJ)
 #-----------------------------------------------
 
 
@@ -194,12 +209,21 @@ LIBPATH=
 clean:
 	RMFI "final\moment1_Final.s19"
 	RMFI "final\_startup.o12"
+	RMFI "final\mom1-low.o12"
+	RMFI "final\mom1.o12"
 #-----------------------------------------------
 
 
 # Dependencies and their build rules
 
 "final\_startup.o12":	\
-	"C:/Program Files/GMV/EducDist/src/startup/xcc12/_startup.s12"
-	ASSM  $(ASFLAGS) $(ASMDEF) -o"final\_startup.o12" "C:/Program Files/GMV/EducDist/src/startup/xcc12/_startup.s12"
+	"C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
+	ASSM  $(ASFLAGS) $(ASMDEF) -o"final\_startup.o12" "C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
+"final\mom1-low.o12":	\
+	"C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12"
+	ASSM  $(ASFLAGS) $(ASMDEF) -o"final\mom1-low.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12"
+"final\mom1.o12":	\
+	"C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1.c"
+	COMP  $(CCFLAGS) $(DEF) $(UNDEF)  \
+	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"final\mom1.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1.c"
 !EICONF	Final
