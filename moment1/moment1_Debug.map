@@ -1,0 +1,90 @@
+QLD (Version 4.8.0)- Link/Load Summary: 'debug\moment1_Debug.s19'
+SCRIPT FILES FROM THE FOLLOWING PATH(S):
+  'C:/Program Files (x86)/GMV/EducDist/config/xcc12'
+
+SCRIPT READ FROM THE FOLLOWING FILE(S):
+  'default.lsc'
+
+---------------------------
+ SEARCHED LIBRARIES:
+ 'C:/Program Files (x86)/GMV/EducDist/lib/xcc12/libcd.e12'
+ 'C:/Program Files (x86)/GMV/EducDist/lib/xcc12/libed.e12'
+ 'C:/Program Files (x86)/GMV/EducDist/lib/xcc12/librtkd.e12'
+ 'C:/Program Files (x86)/GMV/EducDist/lib/xcc12/libccd.e12'
+
+---------------------------
+ PROGRAM ENTRY:'__start'
+---------------------------
+ GROUPS AND SEGMENTS:
+
+  GROUP 'test_group', READ ONLY ,allocation to: 00001000 - 00001231, (size: 562 Bytes)
+   00001000 00001015 'init'
+   00001016 0000117F 'text'
+   00001180 00001231 'bss'
+
+  GROUP 'interrupt_vectors', READ ONLY
+   NO SEGMENTS
+
+  GROUP 'const_group',
+   SEGMENTS
+   'abs'
+---------------------------
+LINKER DEFINED CONSTANTS:
+   __rom_code_enabled = 0
+   __heap_start = 00001232
+  from segment 'text'
+   00001016 '__text__start'
+   00001180 '__text__end'
+   0000016A '__text__size'
+  from segment 'init'
+   00001000 '__init__start'
+   00001016 '__init__end'
+   00000016 '__init__size'
+  from segment 'bss'
+   00001180 '__bss__start'
+   00001232 '__bss__end'
+   000000B2 '__bss__size'
+  from segment 'data'
+   00000000 '__data__start'
+   00000000 '__data__end'
+   00000000 '__data__size'
+  from segment 'rodata'
+   00000000 '__rodata__start'
+   00000000 '__rodata__end'
+   00000000 '__rodata__size'
+---------------------------
+GLOBAL SYMBOL(S):
+
+ in module: '_startup' of type 'O12' defined in file '_startup.o12'
+  in segment: 'text'
+   0000102B '__inchar'
+   00001019 '__init'
+   00001025 '__outchar'
+   00001028 '__tstchar'
+   00001016 '__lowexit'
+  in segment: 'init'
+   00001000 '__start'
+
+ in module: 'mom1_low' of type 'O12' defined in file 'mom1-low.o12'
+  in segment: 'text'
+   00001031 '_main'
+
+ in module: 'mom1' of type 'O12' defined in file 'mom1.o12'
+  in segment: 'text'
+   000010AA '_producer'
+   000010DF '_consumer'
+  in segment: 'bss'
+   00001221 '_position'
+   00001207 '_buffer'
+
+ in module: '__crt' of type 'O12' defined in file '__crt.o12'
+  in segment: 'text'
+   00001105 '___crt_get_system_time'
+   0000110C '___crt_get_msec_ptr'
+   00001110 '___crtInit'
+  in segment: 'bss'
+   00001223 '___crt_first_malloc_element'
+   00001225 '___crt_first_malloc_element_m_base'
+   00001227 '___crt_first_malloc_element_m_size'
+---
+ End of listfile

@@ -84,23 +84,44 @@ _main:
 
 * avbrottsvektor måste initieras under DBG12...
 	LDX #timer_interrupt
-	STX $3FF0 Avbrottsvektor RTC
+	STX $3FF0 	Avbrottsvektor RTC
 * men vi skriver den också till 'rätt' adress för
 * att även kunna använda exemplet i simulatorn...
 	STX $FFF0
 * initiera RTC:n för önskad avbrottsfrekvens
-	MOVB #$49,RTICTL
+*	MOVB #$49,RTICTL
+	MOVB #$10,RTICTL
 * tidsbas 10,24 ms, se exempel ovan
 * initiera RTC
 	MOVB #$80,CRGINT
 * nollställ I-flagga så att avbrott accepteras
-CLI
+	CLI
 
 *init end
 
 * utför nu start av ’producer()’ så som
 * ’timer_interrupt’ gör det...
-	CLR RUNNING
-	LDS Producer_sp
+	CLR	RUNNING
+	LDS	Producer_sp
 	RTI
+	
+	
+timer_interrupt	LDD	0,SP
+	STD	current_sp
+	TST	RUNNING
+	BNE	switch
+	MOVB	current_sp,Producer_sp
+	MOVB	#1,RUNNING
+	MOVB	consumer_sp,current_sp
+	JMP	restore
+	
+switch	MOVB	current_sp,consumer_sp
+	CLR	RUNNING
+	MOVB	Producer_sp,current_sp
+	
+restore	LDS	current_sp
+	MOVB	#80,CRGFLG
+	RTI
+	
+
 * Exekveringen kommer aldrig tillbaks hit...

@@ -1,11 +1,15 @@
 mod:mom1_low:O12:mom1-low.o12
-seg:text:64
+seg:text:120
 seg:abs:0
 seg:bss:135
 C:text	CF0000CE00003435343637B72084EF36
 C:text	7F0000CF0000CE00003435343637B720
 C:text	84EF367F0000CE00007E3FF07EFFF018
-C:text	0B49003B180B800038790000FF00000B
+C:text	0B10003B180B80003810EF790000FF00
+C:text	000BEC807C0000F700002614180C0000
+C:text	0000180B010000180C00000000060000
+C:text	180C00000000790000180C00000000FF
+C:text	0000180B5000370B
 C:bss	00000000000000000000000000000000
 C:bss	00000000000000000000000000000000
 C:bss	00000000000000000000000000000000
@@ -17,13 +21,27 @@ C:bss	00000000000000000000000000000000
 C:bss	00000000000000
 RG:text:mom1_low:00000004:O:W:_producer:45
 RG:text:mom1_low:00000017:O:W:_consumer:66
-RG:text:mom1_low:00000027:O:W:timer_interrupt:86
 RL:text:mom1_low:00000001:O:W:0000003F:bss:44
 RL:text:mom1_low:00000011:O:W:00000083:bss:59
 RL:text:mom1_low:00000014:O:W:0000007F:bss:65
 RL:text:mom1_low:00000024:O:W:00000085:bss:80
-RL:text:mom1_low:0000003A:O:W:00000080:bss:103
-RL:text:mom1_low:0000003D:O:W:00000083:bss:104
+RL:text:mom1_low:00000027:O:W:00000042:text:86
+RL:text:mom1_low:0000003C:O:W:00000080:bss:104
+RL:text:mom1_low:0000003F:O:W:00000083:bss:105
+RL:text:mom1_low:00000045:O:W:00000081:bss:110
+RL:text:mom1_low:00000048:O:W:00000080:bss:111
+RL:text:mom1_low:0000004E:O:W:00000081:bss:113
+RL:text:mom1_low:00000050:O:W:00000083:bss:113
+RL:text:mom1_low:00000055:O:W:00000080:bss:114
+RL:text:mom1_low:00000059:O:W:00000085:bss:115
+RL:text:mom1_low:0000005B:O:W:00000081:bss:115
+RL:text:mom1_low:0000005E:O:W:0000006F:text:116
+RL:text:mom1_low:00000062:O:W:00000081:bss:118
+RL:text:mom1_low:00000064:O:W:00000085:bss:118
+RL:text:mom1_low:00000067:O:W:00000080:bss:119
+RL:text:mom1_low:0000006B:O:W:00000083:bss:120
+RL:text:mom1_low:0000006D:O:W:00000081:bss:120
+RL:text:mom1_low:00000070:O:W:00000081:bss:122
 G:text:mom1_low:00000000:_main
 SY:A:M:mom1_low$C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12
 SY:A:X:mom1_low:44:text:0
@@ -51,11 +69,26 @@ SY:A:X:mom1_low:80:text:23
 SY:A:X:mom1_low:86:text:26
 SY:A:X:mom1_low:87:text:29
 SY:A:X:mom1_low:90:text:2C
-SY:A:X:mom1_low:92:text:2F
-SY:A:X:mom1_low:95:text:34
-SY:A:X:mom1_low:103:text:39
-SY:A:X:mom1_low:104:text:3C
-SY:A:X:mom1_low:105:text:3F
+SY:A:X:mom1_low:93:text:2F
+SY:A:X:mom1_low:96:text:34
+SY:A:X:mom1_low:98:text:39
+SY:A:X:mom1_low:104:text:3B
+SY:A:X:mom1_low:105:text:3E
+SY:A:X:mom1_low:106:text:41
+SY:A:X:mom1_low:109:text:42
+SY:A:X:mom1_low:110:text:44
+SY:A:X:mom1_low:111:text:47
+SY:A:X:mom1_low:112:text:4A
+SY:A:X:mom1_low:113:text:4C
+SY:A:X:mom1_low:114:text:52
+SY:A:X:mom1_low:115:text:57
+SY:A:X:mom1_low:116:text:5D
+SY:A:X:mom1_low:118:text:60
+SY:A:X:mom1_low:119:text:66
+SY:A:X:mom1_low:120:text:69
+SY:A:X:mom1_low:122:text:6F
+SY:A:X:mom1_low:123:text:72
+SY:A:X:mom1_low:124:text:77
 SY:C:T: typ2 l (4)
 SY:C:T: typ4 c (1)
 SY:C:T: typ6 s (2)
