@@ -28,7 +28,7 @@ Producer_sp RMB 2
 * temporär lagring stackpekare för 'consumer'
 consumer_sp RMB 2
 
-segment text 	starta KOD-segment
+	segment text 	 starta KOD
 
 * Följande funktioner är definierade i 'mom1.c'
 	extern _producer
@@ -90,7 +90,7 @@ _main:
 	STX $FFF0
 * initiera RTC:n för önskad avbrottsfrekvens
 *	MOVB #$49,RTICTL
-	MOVB #$10,RTICTL
+	MOVB #$11,RTICTL
 * tidsbas 10,24 ms, se exempel ovan
 * initiera RTC
 	MOVB #$80,CRGINT
@@ -120,7 +120,7 @@ switch	MOVB	current_sp,consumer_sp
 	MOVB	Producer_sp,current_sp
 	
 restore	LDS	current_sp
-	MOVB	#80,CRGFLG
+	MOVB	#$80,CRGFLG
 	RTI
 	
 

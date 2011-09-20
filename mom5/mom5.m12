@@ -42,18 +42,18 @@
 ##OTYPE=1
 #-----------------------------------------------
 #OPEN FILE SECTION
+##OF ".\mom5.c"
 #-----------------------------------------------
 #PROJECT FILES SECTION
 
 FILES= \
 	"..\..\..\..\..\..\..\Program Files (x86)\GMV\EducDist\src\startup\xcc12\_startup.s12" "" "1"  \
-	".\mom1-low.s12" "" "1"  \
-	".\mom1.c" "" "1" 
+	".\mom5.c" "" "1" 
 #-----------------------------------------------
 #PROJECT OPTIONS SECTION
 
 !IFCONF	Debug
-##TARGETNAME="moment1_Debug"
+##TARGETNAME="mom5_Debug"
 ##OBJDIR="debug"
 ##TARGDIR="debug"
 ##STDINCPATH=1
@@ -66,8 +66,7 @@ LNFLAGS=-g -i default.lsc
 
 OBJ= \
 	"debug\_startup.o12" \
-	"debug\mom1-low.o12" \
-	"debug\mom1.o12"
+	"debug\mom5.o12"
 #-----------------------------------------------
 #DEFINES/UNDEFINES SECTION
 
@@ -75,7 +74,8 @@ ASMDEFINES= \
 	_DEBUG
 
 DEFINES= \
-	_DEBUG
+	_DEBUG \
+	RTK12
 
 UNDEFINES=
 #-----------------------------------------------
@@ -99,7 +99,8 @@ ASMDEF= \
  -D_DEBUG
 
 DEF= \
- -D_DEBUG
+ -D_DEBUG \
+ -DRTK12
 
 UNDEF=
 
@@ -113,17 +114,16 @@ LIBPATH=
 #RULES SECTION CONFIGURATION 
 
 # Application
-"debug\moment1_Debug.s19": $(OBJ)
-	LINK -o"debug\moment1_Debug.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libccd.e12"  $(OBJ)
+"debug\mom5_Debug.s19": $(OBJ)
+	LINK -o"debug\mom5_Debug.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libccd.e12"  $(OBJ)
 #-----------------------------------------------
 
 
 # Clean
 clean:
-	RMFI "debug\moment1_Debug.s19"
+	RMFI "debug\mom5_Debug.s19"
 	RMFI "debug\_startup.o12"
-	RMFI "debug\mom1-low.o12"
-	RMFI "debug\mom1.o12"
+	RMFI "debug\mom5.o12"
 #-----------------------------------------------
 
 
@@ -132,17 +132,14 @@ clean:
 "debug\_startup.o12":	\
 	"C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
 	ASSM  $(ASFLAGS) $(ASMDEF) -o"debug\_startup.o12" "C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
-"debug\mom1-low.o12":	\
-	"C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12"
-	ASSM  $(ASFLAGS) $(ASMDEF) -o"debug\mom1-low.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12"
-"debug\mom1.o12":	\
-	"C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1.c"
+"debug\mom5.o12":	\
+	"C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c"
 	COMP  $(CCFLAGS) $(DEF) $(UNDEF)  \
-	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"debug\mom1.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1.c"
+	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"debug\mom5.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c"
 !EICONF	Debug
 
 !IFCONF	Final
-##TARGETNAME="moment1_Final"
+##TARGETNAME="mom5_Final"
 ##OBJDIR="final"
 ##TARGDIR="final"
 ##STDINCPATH=1
@@ -155,8 +152,7 @@ LNFLAGS=-i default.lsc
 
 OBJ= \
 	"final\_startup.o12" \
-	"final\mom1-low.o12" \
-	"final\mom1.o12"
+	"final\mom5.o12"
 #-----------------------------------------------
 #DEFINES/UNDEFINES SECTION
 
@@ -198,17 +194,16 @@ LIBPATH=
 #RULES SECTION CONFIGURATION 
 
 # Application
-"final\moment1_Final.s19": $(OBJ)
-	LINK -o"final\moment1_Final.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libcc.e12"  $(OBJ)
+"final\mom5_Final.s19": $(OBJ)
+	LINK -o"final\mom5_Final.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libcc.e12"  $(OBJ)
 #-----------------------------------------------
 
 
 # Clean
 clean:
-	RMFI "final\moment1_Final.s19"
+	RMFI "final\mom5_Final.s19"
 	RMFI "final\_startup.o12"
-	RMFI "final\mom1-low.o12"
-	RMFI "final\mom1.o12"
+	RMFI "final\mom5.o12"
 #-----------------------------------------------
 
 
@@ -217,11 +212,8 @@ clean:
 "final\_startup.o12":	\
 	"C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
 	ASSM  $(ASFLAGS) $(ASMDEF) -o"final\_startup.o12" "C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
-"final\mom1-low.o12":	\
-	"C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12"
-	ASSM  $(ASFLAGS) $(ASMDEF) -o"final\mom1-low.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1-low.s12"
-"final\mom1.o12":	\
-	"C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1.c"
+"final\mom5.o12":	\
+	"C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c"
 	COMP  $(CCFLAGS) $(DEF) $(UNDEF)  \
-	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"final\mom1.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/moment1/mom1.c"
+	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"final\mom5.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c"
 !EICONF	Final

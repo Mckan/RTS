@@ -1,0 +1,126 @@
+mod:mom5:O12:mom5.o12
+seg:text:149
+seg:bss:0
+seg:data:0
+seg:rodata:9
+C:text	A7A7CE000034CC00643B1600001B84CE
+C:text	000034CE0000341600001B848CFFFF26
+C:text	03160000CE000034CE0000341600001B
+C:text	848CFFFF2603160000CE000034CE0000
+C:text	341600001B848CFFFF26031600001600
+C:text	003D
+C:text	A7A7CC00313B1600001B8220F5
+C:text	A7A7CC00323B1600001B8220F5
+C:text	A7A7CC00333B1600001B8220F5
+C:text	A7A7CE000034FE0000341600001B84CE
+C:text	0000341600001B827C00003D
+C:rodata	503300503200503100
+RG:text:mom5:00000003:O:W:_AtInterrupt:56
+RG:text:mom5:0000000B:O:W:_InitKernel:60
+RG:text:mom5:00000010:O:W:_P1:65
+RG:text:mom5:00000018:O:W:_CreateProcess:69
+RG:text:mom5:00000022:O:W:_ExitKernel:77
+RG:text:mom5:00000025:O:W:_P2:83
+RG:text:mom5:0000002D:O:W:_CreateProcess:87
+RG:text:mom5:00000037:O:W:_ExitKernel:95
+RG:text:mom5:0000003A:O:W:_P3:101
+RG:text:mom5:00000042:O:W:_CreateProcess:105
+RG:text:mom5:0000004C:O:W:_ExitKernel:113
+RG:text:mom5:0000004F:O:W:_StartKernelForSim:120
+RG:text:mom5:00000059:O:W:__outchar:150
+RG:text:mom5:00000066:O:W:__outchar:180
+RG:text:mom5:00000073:O:W:__outchar:212
+RG:text:mom5:0000007C:O:W:_ReadyQ:242
+RG:text:mom5:00000080:O:W:_Running:244
+RG:text:mom5:00000084:O:W:_insert_last:246
+RG:text:mom5:00000089:O:W:_ReadyQ:250
+RG:text:mom5:0000008D:O:W:_remque:252
+RG:text:mom5:00000092:O:W:_Running:254
+RL:text:mom5:00000014:O:W:00000006:rodata:67
+RL:text:mom5:00000029:O:W:00000003:rodata:85
+RL:text:mom5:0000003E:O:W:00000000:rodata:103
+G:text:mom5:00000001:_main
+G:text:mom5:00000053:_P1
+G:text:mom5:0000007A:_AtInterrupt
+G:text:mom5:00000060:_P2
+G:text:mom5:0000006D:_P3
+SY:C:M:mom5$C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c
+SY:C:F:mom5:text:_main:00000001:22
+SY:C:X:mom5:22:1:text:1
+SY:C:X:mom5:25:5:text:2
+SY:C:X:mom5:27:37:text:F
+SY:C:X:mom5:30:2:text:21
+SY:C:X:mom5:33:37:text:24
+SY:C:X:mom5:36:2:text:36
+SY:C:X:mom5:39:37:text:39
+SY:C:X:mom5:42:2:text:4B
+SY:C:X:mom5:46:5:text:4E
+SY:C:X:mom5:47:1:text:51
+SY:C:Z:mom5:47:1:text:51
+SY:C:E:mom5:text:_main:00000052:47
+SY:C:F:mom5:text:_P1:00000053:51
+SY:C:X:mom5:51:2:text:53
+SY:C:X:mom5:53:1:text:54
+SY:C:X:mom5:55:2:text:54
+SY:C:X:mom5:57:1:text:5F
+SY:C:Z:mom5:57:1:text:5F
+SY:C:E:mom5:text:_P1:0000005F:57
+SY:C:F:mom5:text:_P2:00000060:59
+SY:C:X:mom5:59:2:text:60
+SY:C:X:mom5:61:1:text:61
+SY:C:X:mom5:63:2:text:61
+SY:C:X:mom5:66:3:text:6C
+SY:C:Z:mom5:66:3:text:6C
+SY:C:E:mom5:text:_P2:0000006C:66
+SY:C:F:mom5:text:_P3:0000006D:69
+SY:C:X:mom5:69:2:text:6D
+SY:C:X:mom5:71:1:text:6E
+SY:C:X:mom5:73:2:text:6E
+SY:C:X:mom5:76:3:text:79
+SY:C:Z:mom5:76:3:text:79
+SY:C:E:mom5:text:_P3:00000079:76
+SY:C:F:mom5:text:_AtInterrupt:0000007A:81
+SY:C:X:mom5:81:2:text:7A
+SY:C:X:mom5:84:5:text:7B
+SY:C:X:mom5:85:5:text:88
+SY:C:X:mom5:87:2:text:94
+SY:C:Z:mom5:87:2:text:94
+SY:C:E:mom5:text:_AtInterrupt:00000095:87
+SY:C:T:  typ0 V (-1)
+SY:C:T:  typ1 L (4)
+SY:C:T:  typ2 l (4)
+SY:C:T:  typ3 C (1)
+SY:C:T:  typ4 c (1)
+SY:C:T:  typ5 S (2)
+SY:C:T:  typ6 s (2)
+SY:C:T:  typ7 g (4)
+SY:C:T:  typ8 G (4)
+SY:C:T:  typ9 h (4)
+SY:C:T:  typ10 R (2)
+SY:C:T:  typ11 I (2)
+SY:C:T:  typ12 i (2)
+SY:C:T:  typ13 E (2)
+SY:C:T:  typ14 F (2)
+SY:C:T:  typ15 P (2)
+SY:C:T:mom5: typ16-mom5 Z (268)S pcb {\
+next:(0):(typ17-mom5);\
+prev:(2):(typ17-mom5);\
+stkptr:(4):(typ18-mom5);\
+stat:(6):(typ11);\
+exitcode:(8):(typ11);\
+name:(10):(typ19-mom5);\
+stack:(12):(typ20-mom5);\
+}
+SY:C:T:mom5: typ17-mom5 a *(typ16-mom5)
+SY:C:T:mom5: typ18-mom5 a *(typ3)
+SY:C:T:mom5: typ19-mom5 a *(typ3)
+SY:C:T:mom5: typ20-mom5 A (256)(typ3)
+SY:C:T:mom5: typ21-mom5 Z (4)S sem {\
+proc:(0):(typ17-mom5);\
+cnt:(2):(typ11);\
+}
+SY:C:T:mom5: typ22-mom5 A (-1)(typ16-mom5)
+SY:C:T: typ2 l (4)
+SY:C:T: typ4 c (1)
+SY:C:T: typ6 s (2)
+e

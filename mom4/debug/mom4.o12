@@ -1,0 +1,115 @@
+mod:mom4:O12:mom4.o12
+seg:text:146
+seg:bss:0
+seg:data:0
+seg:rodata:6
+C:text	A7A7CE000034CC00643B1600001B84CE
+C:text	000034CE0000341600001B848CFFFF26
+C:text	03160000CE000034CE0000341600001B
+C:text	848CFFFF26031600001600003D
+C:text	A71B9E87C76C80EC808C03E82C10CC00
+C:text	313B1600001B82EE80086E8020E987C7
+C:text	3B1600001B821B823D
+C:text	A71B9E87C76C80EC808C03E82C10CC00
+C:text	323B1600001B82EE80086E8020E987C7
+C:text	3B1600001B821B823D
+C:text	A7A73D
+C:rodata	503200503100
+RG:text:mom4:00000003:O:W:_AtInterrupt:54
+RG:text:mom4:0000000B:O:W:_InitKernel:58
+RG:text:mom4:00000010:O:W:_P1:63
+RG:text:mom4:00000018:O:W:_CreateProcess:67
+RG:text:mom4:00000022:O:W:_ExitKernel:75
+RG:text:mom4:00000025:O:W:_P2:81
+RG:text:mom4:0000002D:O:W:_CreateProcess:85
+RG:text:mom4:00000037:O:W:_ExitKernel:93
+RG:text:mom4:0000003A:O:W:_StartKernelForSim:100
+RG:text:mom4:00000050:O:W:__outchar:139
+RG:text:mom4:0000005F:O:W:_TerminateProcess:153
+RG:text:mom4:00000079:O:W:__outchar:192
+RG:text:mom4:00000088:O:W:_TerminateProcess:206
+RL:text:mom4:00000014:O:W:00000003:rodata:65
+RL:text:mom4:00000029:O:W:00000000:rodata:83
+G:text:mom4:00000001:_main
+G:text:mom4:0000003E:_P1
+G:text:mom4:00000090:_AtInterrupt
+G:text:mom4:00000067:_P2
+SY:C:M:mom4$C:/Users/Mckan/Documents/GitDB/Git/RTS/mom4/mom4.c
+SY:C:F:mom4:text:_main:00000001:22
+SY:C:X:mom4:22:1:text:1
+SY:C:X:mom4:25:5:text:2
+SY:C:X:mom4:27:37:text:F
+SY:C:X:mom4:30:2:text:21
+SY:C:X:mom4:33:37:text:24
+SY:C:X:mom4:36:2:text:36
+SY:C:X:mom4:40:5:text:39
+SY:C:X:mom4:41:1:text:3C
+SY:C:Z:mom4:41:1:text:3C
+SY:C:E:mom4:text:_main:0000003D:41
+SY:C:F:mom4:text:_P1:0000003E:45
+SY:C:X:mom4:45:2:text:3E
+SY:C:S:F:mom4:P1:_P1:(typ0)(typ0)
+SY:C:S:F:mom4:__func__:___func__:(typ11)
+SY:C:S:L:mom4:P1:i:0:(typ11)
+SY:C:X:mom4:48:4:text:40
+SY:C:X:mom4:49:6:text:4B
+SY:C:X:mom4:48:18:text:54
+SY:C:X:mom4:51:5:text:5B
+SY:C:X:mom4:52:1:text:63
+SY:C:Z:mom4:52:1:text:63
+SY:C:E:mom4:text:_P1:00000066:52
+SY:C:F:mom4:text:_P2:00000067:54
+SY:C:X:mom4:54:2:text:67
+SY:C:S:F:mom4:P2:_P2:(typ0)(typ0)
+SY:C:S:F:mom4:__func__:___func__:(typ11)
+SY:C:S:L:mom4:P2:i:0:(typ11)
+SY:C:X:mom4:57:4:text:69
+SY:C:X:mom4:58:6:text:74
+SY:C:X:mom4:57:18:text:7D
+SY:C:X:mom4:60:5:text:84
+SY:C:X:mom4:62:3:text:8C
+SY:C:Z:mom4:62:3:text:8C
+SY:C:E:mom4:text:_P2:0000008F:62
+SY:C:F:mom4:text:_AtInterrupt:00000090:66
+SY:C:X:mom4:66:2:text:90
+SY:C:X:mom4:71:2:text:91
+SY:C:Z:mom4:71:2:text:91
+SY:C:E:mom4:text:_AtInterrupt:00000092:71
+SY:C:T:  typ0 V (-1)
+SY:C:T:  typ1 L (4)
+SY:C:T:  typ2 l (4)
+SY:C:T:  typ3 C (1)
+SY:C:T:  typ4 c (1)
+SY:C:T:  typ5 S (2)
+SY:C:T:  typ6 s (2)
+SY:C:T:  typ7 g (4)
+SY:C:T:  typ8 G (4)
+SY:C:T:  typ9 h (4)
+SY:C:T:  typ10 R (2)
+SY:C:T:  typ11 I (2)
+SY:C:T:  typ12 i (2)
+SY:C:T:  typ13 E (2)
+SY:C:T:  typ14 F (2)
+SY:C:T:  typ15 P (2)
+SY:C:T:mom4: typ16-mom4 Z (268)S pcb {\
+next:(0):(typ17-mom4);\
+prev:(2):(typ17-mom4);\
+stkptr:(4):(typ18-mom4);\
+stat:(6):(typ11);\
+exitcode:(8):(typ11);\
+name:(10):(typ19-mom4);\
+stack:(12):(typ20-mom4);\
+}
+SY:C:T:mom4: typ17-mom4 a *(typ16-mom4)
+SY:C:T:mom4: typ18-mom4 a *(typ3)
+SY:C:T:mom4: typ19-mom4 a *(typ3)
+SY:C:T:mom4: typ20-mom4 A (256)(typ3)
+SY:C:T:mom4: typ21-mom4 Z (4)S sem {\
+proc:(0):(typ17-mom4);\
+cnt:(2):(typ11);\
+}
+SY:C:T:mom4: typ22-mom4 A (-1)(typ16-mom4)
+SY:C:T: typ2 l (4)
+SY:C:T: typ4 c (1)
+SY:C:T: typ6 s (2)
+e
