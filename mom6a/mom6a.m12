@@ -42,17 +42,18 @@
 ##OTYPE=1
 #-----------------------------------------------
 #OPEN FILE SECTION
+##OF ".\mom6a.c"
 #-----------------------------------------------
 #PROJECT FILES SECTION
 
 FILES= \
 	"..\..\..\..\..\..\..\Program Files (x86)\GMV\EducDist\src\startup\xcc12\_startup.s12" "" "1"  \
-	".\mom5.c" "" "1" 
+	".\mom6a.c" "" "1" 
 #-----------------------------------------------
 #PROJECT OPTIONS SECTION
 
 !IFCONF	Debug
-##TARGETNAME="mom5_Debug"
+##TARGETNAME="mom6a_Debug"
 ##OBJDIR="debug"
 ##TARGDIR="debug"
 ##STDINCPATH=1
@@ -65,7 +66,7 @@ LNFLAGS=-g -i default.lsc
 
 OBJ= \
 	"debug\_startup.o12" \
-	"debug\mom5.o12"
+	"debug\mom6a.o12"
 #-----------------------------------------------
 #DEFINES/UNDEFINES SECTION
 
@@ -113,16 +114,16 @@ LIBPATH=
 #RULES SECTION CONFIGURATION 
 
 # Application
-"debug\mom5_Debug.s19": $(OBJ)
-	LINK -o"debug\mom5_Debug.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libccd.e12"  $(OBJ)
+"debug\mom6a_Debug.s19": $(OBJ)
+	LINK -o"debug\mom6a_Debug.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libccd.e12"  $(OBJ)
 #-----------------------------------------------
 
 
 # Clean
 clean:
-	RMFI "debug\mom5_Debug.s19"
+	RMFI "debug\mom6a_Debug.s19"
 	RMFI "debug\_startup.o12"
-	RMFI "debug\mom5.o12"
+	RMFI "debug\mom6a.o12"
 #-----------------------------------------------
 
 
@@ -131,14 +132,14 @@ clean:
 "debug\_startup.o12":	\
 	"C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
 	ASSM  $(ASFLAGS) $(ASMDEF) -o"debug\_startup.o12" "C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
-"debug\mom5.o12":	\
-	"C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c"
+"debug\mom6a.o12":	\
+	"C:/Users/Mckan/Documents/GitDB/Git/RTS/mom6a/mom6a.c"
 	COMP  $(CCFLAGS) $(DEF) $(UNDEF)  \
-	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"debug\mom5.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c"
+	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"debug\mom6a.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/mom6a/mom6a.c"
 !EICONF	Debug
 
 !IFCONF	Final
-##TARGETNAME="mom5_Final"
+##TARGETNAME="mom6a_Final"
 ##OBJDIR="final"
 ##TARGDIR="final"
 ##STDINCPATH=1
@@ -151,7 +152,7 @@ LNFLAGS=-i default.lsc
 
 OBJ= \
 	"final\_startup.o12" \
-	"final\mom5.o12"
+	"final\mom6a.o12"
 #-----------------------------------------------
 #DEFINES/UNDEFINES SECTION
 
@@ -193,16 +194,16 @@ LIBPATH=
 #RULES SECTION CONFIGURATION 
 
 # Application
-"final\mom5_Final.s19": $(OBJ)
-	LINK -o"final\mom5_Final.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libcc.e12"  $(OBJ)
+"final\mom6a_Final.s19": $(OBJ)
+	LINK -o"final\mom6a_Final.s19" $(LNFLAGS)  $(LIBPATH) $(LIB) -L"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12" -l"C:\Program Files (x86)\GMV\EducDist\bin\..\lib\xcc12\libcc.e12"  $(OBJ)
 #-----------------------------------------------
 
 
 # Clean
 clean:
-	RMFI "final\mom5_Final.s19"
+	RMFI "final\mom6a_Final.s19"
 	RMFI "final\_startup.o12"
-	RMFI "final\mom5.o12"
+	RMFI "final\mom6a.o12"
 #-----------------------------------------------
 
 
@@ -211,8 +212,8 @@ clean:
 "final\_startup.o12":	\
 	"C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
 	ASSM  $(ASFLAGS) $(ASMDEF) -o"final\_startup.o12" "C:/Program Files (x86)/GMV/EducDist/src/startup/xcc12/_startup.s12"
-"final\mom5.o12":	\
-	"C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c"
+"final\mom6a.o12":	\
+	"C:/Users/Mckan/Documents/GitDB/Git/RTS/mom6a/mom6a.c"
 	COMP  $(CCFLAGS) $(DEF) $(UNDEF)  \
-	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"final\mom5.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/mom5/mom5.c"
+	-I"C:\Program Files (x86)\GMV\EducDist\bin\..\include" $(INC) -o"final\mom6a.o12" "C:/Users/Mckan/Documents/GitDB/Git/RTS/mom6a/mom6a.c"
 !EICONF	Final

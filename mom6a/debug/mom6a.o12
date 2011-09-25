@@ -1,0 +1,174 @@
+mod:mom6a:O12:mom6a.o12
+seg:text:301
+seg:bss:0
+seg:data:0
+seg:rodata:12
+C:text	A7A7CE000034CC00643B1600001B84CE
+C:text	000034CE0000341600001B848CFFFF26
+C:text	03160000CE000034CE0000341600001B
+C:text	848CFFFF2603160000CE000034CE0000
+C:text	341600001B848CFFFF2603160000CE00
+C:text	0034CE0000341600001B848CFFFF2603
+C:text	160000CC00013B3B1600001B8487C73B
+C:text	CC00023B1600001B8487C73BCC00033B
+C:text	1600001B8487C73BCC00043B1600001B
+C:text	841600003D
+C:text	A7A7CC00013B1600001B82CC00313B16
+C:text	00001B82CC00023B1600001B8220E3
+C:text	A7A7CC00023B1600001B82CC00323B16
+C:text	00001B82CC00033B1600001B8220E3
+C:text	A7A7CC00033B1600001B82CC00333B16
+C:text	00001B82CC00043B1600001B8220E3
+C:text	A7A7CC00043B1600001B82CC00343B16
+C:text	00001B82CC00013B1600001B8220E3
+C:text	A7A7CE000034FE0000341600001B84CE
+C:text	0000341600001B827C00003D
+C:rodata	503400503300503200503100
+RG:text:mom6a:00000003:O:W:_AtInterrupt:63
+RG:text:mom6a:0000000B:O:W:_InitKernel:67
+RG:text:mom6a:00000010:O:W:_P1:72
+RG:text:mom6a:00000018:O:W:_CreateProcess:76
+RG:text:mom6a:00000022:O:W:_ExitKernel:84
+RG:text:mom6a:00000025:O:W:_P2:90
+RG:text:mom6a:0000002D:O:W:_CreateProcess:94
+RG:text:mom6a:00000037:O:W:_ExitKernel:102
+RG:text:mom6a:0000003A:O:W:_P3:108
+RG:text:mom6a:00000042:O:W:_CreateProcess:112
+RG:text:mom6a:0000004C:O:W:_ExitKernel:120
+RG:text:mom6a:0000004F:O:W:_P4:126
+RG:text:mom6a:00000057:O:W:_CreateProcess:130
+RG:text:mom6a:00000061:O:W:_ExitKernel:138
+RG:text:mom6a:00000069:O:W:_initsem:149
+RG:text:mom6a:00000075:O:W:_initsem:158
+RG:text:mom6a:00000081:O:W:_initsem:167
+RG:text:mom6a:0000008D:O:W:_initsem:176
+RG:text:mom6a:00000092:O:W:_StartKernelForSim:182
+RG:text:mom6a:0000009C:O:W:_waitsem:212
+RG:text:mom6a:000000A5:O:W:__outchar:218
+RG:text:mom6a:000000AE:O:W:_signalsem:224
+RG:text:mom6a:000000BB:O:W:_waitsem:254
+RG:text:mom6a:000000C4:O:W:__outchar:260
+RG:text:mom6a:000000CD:O:W:_signalsem:266
+RG:text:mom6a:000000DA:O:W:_waitsem:298
+RG:text:mom6a:000000E3:O:W:__outchar:304
+RG:text:mom6a:000000EC:O:W:_signalsem:310
+RG:text:mom6a:000000F9:O:W:_waitsem:341
+RG:text:mom6a:00000102:O:W:__outchar:347
+RG:text:mom6a:0000010B:O:W:_signalsem:353
+RG:text:mom6a:00000114:O:W:_ReadyQ:383
+RG:text:mom6a:00000118:O:W:_Running:385
+RG:text:mom6a:0000011C:O:W:_insert_last:387
+RG:text:mom6a:00000121:O:W:_ReadyQ:391
+RG:text:mom6a:00000125:O:W:_remque:393
+RG:text:mom6a:0000012A:O:W:_Running:395
+RL:text:mom6a:00000014:O:W:00000009:rodata:74
+RL:text:mom6a:00000029:O:W:00000006:rodata:92
+RL:text:mom6a:0000003E:O:W:00000003:rodata:110
+RL:text:mom6a:00000053:O:W:00000000:rodata:128
+G:text:mom6a:00000001:_main
+G:text:mom6a:00000096:_P1
+G:text:mom6a:00000112:_AtInterrupt
+G:text:mom6a:000000B5:_P2
+G:text:mom6a:000000D4:_P3
+G:text:mom6a:000000F3:_P4
+SY:C:M:mom6a$C:/Users/Mckan/Documents/GitDB/Git/RTS/mom6a/mom6a.c
+SY:C:F:mom6a:text:_main:00000001:27
+SY:C:X:mom6a:27:1:text:1
+SY:C:X:mom6a:30:5:text:2
+SY:C:X:mom6a:32:37:text:F
+SY:C:X:mom6a:35:2:text:21
+SY:C:X:mom6a:38:37:text:24
+SY:C:X:mom6a:41:2:text:36
+SY:C:X:mom6a:44:37:text:39
+SY:C:X:mom6a:47:2:text:4B
+SY:C:X:mom6a:50:37:text:4E
+SY:C:X:mom6a:53:2:text:60
+SY:C:X:mom6a:58:5:text:63
+SY:C:X:mom6a:59:5:text:6D
+SY:C:X:mom6a:60:5:text:79
+SY:C:X:mom6a:61:5:text:85
+SY:C:X:mom6a:64:5:text:91
+SY:C:X:mom6a:65:1:text:94
+SY:C:Z:mom6a:65:1:text:94
+SY:C:E:mom6a:text:_main:00000095:65
+SY:C:F:mom6a:text:_P1:00000096:69
+SY:C:X:mom6a:69:2:text:96
+SY:C:X:mom6a:71:1:text:97
+SY:C:X:mom6a:73:2:text:97
+SY:C:X:mom6a:74:2:text:A0
+SY:C:X:mom6a:75:2:text:A9
+SY:C:X:mom6a:77:1:text:B4
+SY:C:Z:mom6a:77:1:text:B4
+SY:C:E:mom6a:text:_P1:000000B4:77
+SY:C:F:mom6a:text:_P2:000000B5:79
+SY:C:X:mom6a:79:2:text:B5
+SY:C:X:mom6a:81:1:text:B6
+SY:C:X:mom6a:83:2:text:B6
+SY:C:X:mom6a:84:2:text:BF
+SY:C:X:mom6a:85:2:text:C8
+SY:C:X:mom6a:88:3:text:D3
+SY:C:Z:mom6a:88:3:text:D3
+SY:C:E:mom6a:text:_P2:000000D3:88
+SY:C:F:mom6a:text:_P3:000000D4:91
+SY:C:X:mom6a:91:2:text:D4
+SY:C:X:mom6a:93:1:text:D5
+SY:C:X:mom6a:95:2:text:D5
+SY:C:X:mom6a:96:2:text:DE
+SY:C:X:mom6a:97:2:text:E7
+SY:C:X:mom6a:100:3:text:F2
+SY:C:Z:mom6a:100:3:text:F2
+SY:C:E:mom6a:text:_P3:000000F2:100
+SY:C:F:mom6a:text:_P4:000000F3:102
+SY:C:X:mom6a:102:2:text:F3
+SY:C:X:mom6a:104:1:text:F4
+SY:C:X:mom6a:106:2:text:F4
+SY:C:X:mom6a:107:2:text:FD
+SY:C:X:mom6a:108:2:text:106
+SY:C:X:mom6a:111:3:text:111
+SY:C:Z:mom6a:111:3:text:111
+SY:C:E:mom6a:text:_P4:00000111:111
+SY:C:F:mom6a:text:_AtInterrupt:00000112:116
+SY:C:X:mom6a:116:2:text:112
+SY:C:X:mom6a:119:5:text:113
+SY:C:X:mom6a:120:5:text:120
+SY:C:X:mom6a:122:2:text:12C
+SY:C:Z:mom6a:122:2:text:12C
+SY:C:E:mom6a:text:_AtInterrupt:0000012D:122
+SY:C:T:  typ0 V (-1)
+SY:C:T:  typ1 L (4)
+SY:C:T:  typ2 l (4)
+SY:C:T:  typ3 C (1)
+SY:C:T:  typ4 c (1)
+SY:C:T:  typ5 S (2)
+SY:C:T:  typ6 s (2)
+SY:C:T:  typ7 g (4)
+SY:C:T:  typ8 G (4)
+SY:C:T:  typ9 h (4)
+SY:C:T:  typ10 R (2)
+SY:C:T:  typ11 I (2)
+SY:C:T:  typ12 i (2)
+SY:C:T:  typ13 E (2)
+SY:C:T:  typ14 F (2)
+SY:C:T:  typ15 P (2)
+SY:C:T:mom6a: typ16-mom6a Z (268)S pcb {\
+next:(0):(typ17-mom6a);\
+prev:(2):(typ17-mom6a);\
+stkptr:(4):(typ18-mom6a);\
+stat:(6):(typ11);\
+exitcode:(8):(typ11);\
+name:(10):(typ19-mom6a);\
+stack:(12):(typ20-mom6a);\
+}
+SY:C:T:mom6a: typ17-mom6a a *(typ16-mom6a)
+SY:C:T:mom6a: typ18-mom6a a *(typ3)
+SY:C:T:mom6a: typ19-mom6a a *(typ3)
+SY:C:T:mom6a: typ20-mom6a A (256)(typ3)
+SY:C:T:mom6a: typ21-mom6a Z (4)S sem {\
+proc:(0):(typ17-mom6a);\
+cnt:(2):(typ11);\
+}
+SY:C:T:mom6a: typ22-mom6a A (-1)(typ16-mom6a)
+SY:C:T: typ2 l (4)
+SY:C:T: typ4 c (1)
+SY:C:T: typ6 s (2)
+e

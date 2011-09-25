@@ -1,0 +1,142 @@
+QLD (Version 4.8.0)- Link/Load Summary: 'debug\mom6a_Debug.s19'
+SCRIPT FILES FROM THE FOLLOWING PATH(S):
+  'C:/Program Files (x86)/GMV/EducDist/config/xcc12'
+
+SCRIPT READ FROM THE FOLLOWING FILE(S):
+  'default.lsc'
+
+---------------------------
+ SEARCHED LIBRARIES:
+ 'C:/Program Files (x86)/GMV/EducDist/lib/xcc12/libcd.e12'
+ 'C:/Program Files (x86)/GMV/EducDist/lib/xcc12/libed.e12'
+ 'C:/Program Files (x86)/GMV/EducDist/lib/xcc12/librtkd.e12'
+ 'C:/Program Files (x86)/GMV/EducDist/lib/xcc12/libccd.e12'
+
+---------------------------
+ PROGRAM ENTRY:'__start'
+---------------------------
+ GROUPS AND SEGMENTS:
+
+  GROUP 'test_group', READ ONLY ,allocation to: 00001000 - 00001E95, (size: 3734 Bytes)
+   00001000 00001015 'init'
+   00001016 00001879 'text'
+   0000187A 00001A2B 'rodata'
+   00001A2C 00001E95 'bss'
+
+  GROUP 'interrupt_vectors', READ ONLY
+   NO SEGMENTS
+
+  GROUP 'const_group',
+   SEGMENTS
+   'abs'
+---------------------------
+LINKER DEFINED CONSTANTS:
+   __rom_code_enabled = 0
+   __heap_start = 00001E96
+  from segment 'text'
+   00001016 '__text__start'
+   0000187A '__text__end'
+   00000864 '__text__size'
+  from segment 'init'
+   00001000 '__init__start'
+   00001016 '__init__end'
+   00000016 '__init__size'
+  from segment 'bss'
+   00001A2C '__bss__start'
+   00001E96 '__bss__end'
+   0000046A '__bss__size'
+  from segment 'data'
+   00000000 '__data__start'
+   00000000 '__data__end'
+   00000000 '__data__size'
+  from segment 'rodata'
+   0000187A '__rodata__start'
+   00001A2C '__rodata__end'
+   000001B2 '__rodata__size'
+---------------------------
+GLOBAL SYMBOL(S):
+
+ in module: '_startup' of type 'O12' defined in file '_startup.o12'
+  in segment: 'text'
+   0000102B '__inchar'
+   00001019 '__init'
+   00001025 '__outchar'
+   00001028 '__tstchar'
+   00001016 '__lowexit'
+  in segment: 'init'
+   00001000 '__start'
+
+ in module: 'mom6a' of type 'O12' defined in file 'mom6a.o12'
+  in segment: 'text'
+   00001032 '_main'
+   000010C7 '_P1'
+   00001143 '_AtInterrupt'
+   000010E6 '_P2'
+   00001105 '_P3'
+   00001124 '_P4'
+
+ in module: '__crt' of type 'O12' defined in file '__crt.o12'
+  in segment: 'text'
+   0000115E '___crt_get_system_time'
+   00001165 '___crt_get_msec_ptr'
+   00001169 '___crtInit'
+  in segment: 'bss'
+   00001A2C '___crt_first_malloc_element'
+   00001A2E '___crt_first_malloc_element_m_base'
+   00001A30 '___crt_first_malloc_element_m_size'
+
+ in module: 'queue' of type 'O12' defined in file 'queue.o12'
+  in segment: 'text'
+   00001205 '_insert_last'
+   00001246 '_insert_first'
+   000011D8 '_remque'
+
+ in module: 'kernel' of type 'O12' defined in file 'kernel.o12'
+  in segment: 'text'
+   0000131D '_StartKernelForSim'
+   00001551 '_signalsem'
+   00001280 '_InitKernel'
+   00001425 '_initsem'
+   000014CB '_waitsem'
+   00001332 '_ExitKernel'
+   0000136E '_CreateProcess'
+   000013F0 '_dispatch'
+   00001308 '_StartKernel'
+   00001415 '_TerminateProcess'
+  in segment: 'bss'
+   00001A3A '_Processes'
+   00001E8A '_Running'
+   00001E6A '_WaitQ'
+   00001E8C '_ReadyQ'
+
+ in module: 'kutil' of type 'O12' defined in file 'kutil.o12'
+  in segment: 'text'
+   000015EA '_printqentry'
+   00001739 '_printsemq'
+   000016FF '_printPCBtable'
+   00001588 '_printX'
+   00001571 '_printl'
+   000016B6 '_printq'
+
+ in module: 'asrtk' of type 'O12' defined in file 'asrtk.o12'
+  in segment: 'text'
+   000017DB '_initcontext'
+   000017F4 '_suspend'
+   000017F1 '_restore'
+   000017C5 '_timer_irq_routine'
+
+ in module: 'timer' of type 'O12' defined in file 'timer.o12'
+  in segment: 'text'
+   0000185B '_start_timer'
+   0000181D '_set_timer'
+   00001875 '_get_rtk_time'
+   00001839 '_tick_timer'
+   00001871 '_stop_timer'
+   00001866 '_start_sim_timer'
+  in segment: 'bss'
+   00001E90 '_rtk_tick_count'
+   00001E91 '_rtk_elapsed_tick_count'
+   00001E92 '_rtk_at_irq'
+   00001E94 '_rtk_time'
+---
+ End of listfile
